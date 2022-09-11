@@ -314,7 +314,7 @@ function secondarystatus27() {
 
 
     // Swift 
-    let b = ["//swiftenv1/", "//swiftenv2/", "//swiftenv3/", "//swiftenv4/"]
+    let b = ["http://swiftenv1/", "http://swiftenv2/", "http://swiftenv3/", "http://swiftenv4/"]
     for (let i = 0; i <= 3; i++) {
 
         http.get(b[i], function (res) {
@@ -493,10 +493,10 @@ function secondarystatus27() {
                             <div id="alleft">
                             <Tippy placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="Tracks order package journey from request to an actual order, System to link order processing from Sales through Service activation and Billing."><t>Swift</t></Tippy>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             {/* <p> Swift &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
-                            <a href="//swiftenv1/" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST1 "><button id="custbtn" text='submit' className={data4}   >TEST1</button></Tippy></a>&nbsp;&nbsp;
-                            <a href="//swiftenv2/" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST2 "><button id="custbtn" text='submit' className={data5}   >TEST2</button></Tippy></a>&nbsp;&nbsp;
-                            <a href="//swiftenv3/" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST3 "><button id="custbtn" text='submit' className={data6}   >TEST3</button></Tippy></a>&nbsp;
-                            <a href="//swiftenv4/" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST4 "><button id="custbtn" text='submit' className={data7}   >TEST4</button></Tippy><br></br></a>
+                            <a href="http://swiftenv1/" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST1 "><button id="custbtn" text='submit' className={data4}   >TEST1</button></Tippy></a>&nbsp;&nbsp;
+                            <a href="http://swiftenv2/" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST2 "><button id="custbtn" text='submit' className={data5}   >TEST2</button></Tippy></a>&nbsp;&nbsp;
+                            <a href="http://swiftenv3/" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST3 "><button id="custbtn" text='submit' className={data6}   >TEST3</button></Tippy></a>&nbsp;
+                            <a href="http://swiftenv4/" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST4 "><button id="custbtn" text='submit' className={data7}   >TEST4</button></Tippy><br></br></a>
                             </div>
 
 

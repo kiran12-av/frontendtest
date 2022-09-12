@@ -320,11 +320,11 @@ function secondarystatus27() {
         http.get(b[i], function (res) {
             if (i === 0) {
           
-                let data4 =res.statusCode === 200 ? secondarystatus4(): primarystatus4() 
+                let data4 =res.statusCode === 200 ||201 ? secondarystatus4(): primarystatus4() 
             }
 
             if (i === 1) {
-                let data5 = res.statusCode === 200 ? secondarystatus5(): primarystatus5() 
+                let data5 = res.statusCode === 200||201 ? primarystatus5(): secondarystatus5() 
             }
             if (i === 2) {
                 let data6 = res.statusCode === 200 ? primarystatus6() : secondarystatus6()

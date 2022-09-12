@@ -4,7 +4,6 @@ import React, { useState } from 'react'
 import { Button } from 'react-bootstrap';
 
 
-
 import Tippy from '@tippy.js/react'
 import 'tippy.js/dist/tippy.css'  // to have default style 
 import 'tippy.js/themes/light.css'
@@ -293,6 +292,7 @@ function secondarystatus27() {
         http.get(a[i], function (res) {
             if (i === 0) {
                 let data = res.statusCode === 200 ? primarystatus() : secondarystatus()
+                console.log(res)
             }
 
             if (i === 1) {
@@ -317,27 +317,33 @@ function secondarystatus27() {
     let b = ["http://swiftenv1/", "http://swiftenv2/", "http://swiftenv3/", "http://swiftenv4/"]
     for (let i = 0; i <= 3; i++) {
 
-        http.get(b[i], function (res) {
+        http.get(b[i], function(res){
             if (i === 0) {
           
-                let data4 =res.statusCode === 200 ||201 ? secondarystatus4(): primarystatus4() 
+                let data4 =res.statusCode === 200 ? primarystatus4() : secondarystatus4()
+                console.log(res)
             }
 
             if (i === 1) {
-                let data5 = res.statusCode === 200||201 ? primarystatus5(): secondarystatus5() 
+                let data5 = res.statusCode === 200 ? primarystatus5(): secondarystatus5() 
+                console.log(res)
             }
             if (i === 2) {
                 let data6 = res.statusCode === 200 ? primarystatus6() : secondarystatus6()
+                console.log(res)
             }
             if (i === 3) {
                 let data7 = res.statusCode === 200 ? primarystatus7() : secondarystatus7()
+                console.log(res)
             }
 
         
 
-        })
-
-    }
+        }
+        
+       )
+    
+}
 
     //BPMS
 
@@ -347,10 +353,13 @@ function secondarystatus27() {
         http.get(c[i], function (res) {
             if (i === 0) {
                 let data9 = res.statusCode === 200 ? primarystatus8() : secondarystatus8()
+                console.log(res)
+
             }
 
             if (i === 1) {
                 let data9 = res.statusCode === 200 ? primarystatus9() : secondarystatus9()
+                console.log(res)
             }
             if (i === 2) {
                 let data10 = res.statusCode === 200 ? primarystatus10() : secondarystatus10()
@@ -472,6 +481,10 @@ function secondarystatus27() {
        })
 
    }
+
+  
+
+ 
 
 
     return (

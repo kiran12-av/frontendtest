@@ -139,7 +139,7 @@ function Supportselect() {
 
                 {/* Working fine {(posts.length ? posts.map(post => <div key={post.id}><p>=================<b> Order info </b>  ===============</p> <b>Data type is : </b> {post.Data_Type} <br></br> <b>Order Id is :</b> {post.Order_Id} <br></br> <b>Updated on :</b>  {post.date}  <p>=================<b> End </b>  ====================</p></div>) : null)}   */}
                 <br></br>
-                {/* {(posts.length ? posts.map(post => <div key={post.id}><textarea rows="5" cols="50" value={`Order type  : ${post.Data_Type} \nOrder id    : ${post.Order_Id}\nPOC         : ${post.POC}\nUpdated on  : ${post.date}`} ></textarea></div>) : null)} */}
+                {(posts.length ?Array.isArray(posts) && posts.map(post => <div key={post.id}><textarea rows="5" cols="50" value={`Order type  : ${post.Data_Type} \nOrder id    : ${post.Order_Id}\nPOC         : ${post.POC}\nUpdated on  : ${post.date}`} ></textarea></div>) : null)}
             </div>
 
 

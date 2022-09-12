@@ -320,20 +320,20 @@ function secondarystatus27() {
         http.get(b[i], function(res){
             if (i === 0) {
           
-                let data4 =res.statusCode !== 200 ? primarystatus4() : primarystatus4() 
+                let data4 =res.statusCode === 200 ? primarystatus4() : secondarystatus4()
                 console.log(res)
             }
 
             if (i === 1) {
-                let data5 = res.statusCode === 200 ? primarystatus5(): primarystatus5() 
+                let data5 = res.statusCode === 200 ? primarystatus5(): secondarystatus5() 
                 console.log(res)
             }
             if (i === 2) {
-                let data6 = res.statusCode === 200 ? primarystatus6() : primarystatus6()
+                let data6 = res.statusCode === 200 ? primarystatus6() : secondarystatus6()
                 console.log(res)
             }
             if (i === 3) {
-                let data7 = res.statusCode === 200 ? primarystatus7() : primarystatus7()
+                let data7 = res.statusCode === 200 ? primarystatus7() : secondarystatus7()
                 console.log(res)
             }
 

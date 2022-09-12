@@ -347,7 +347,7 @@ function secondarystatus27() {
 
     //BPMS
 
-    let c = ["//revenueservicetest/WebUI/ENV1/RevenueCreditAuthWeb/Order/List", "//revenueservicetest/WebUI/ENV2/RevenueCreditAuthWeb/Order/List", "//revenueservicetest/WebUI/ENV3/RevenueCreditAuthWeb/Order/List", "//revenueservicetest/WebUI/ENV4/RevenueCreditAuthWeb/Order/List"]
+    let c = ["http://revenueservicetest/WebUI/ENV1/RevenueCreditAuthWeb/Order/List", "http://revenueservicetest/WebUI/ENV2/RevenueCreditAuthWeb/Order/List", "http://revenueservicetest/WebUI/ENV3/RevenueCreditAuthWeb/Order/List", "http://revenueservicetest/WebUI/ENV4/RevenueCreditAuthWeb/Order/List"]
     for (let i = 0; i <= 3; i++) {
 
         http.get(c[i], function (res) {
@@ -430,22 +430,26 @@ function secondarystatus27() {
 
     // ASRI 
 
-    let f = ["//amd01adc-uat.adc1.level3.com:20100/AmdocsOSS/Portal/login.html", "//amd03adc-uat.adc1.level3.com:20300/AmdocsOSS/Portal/login.html", "//amd03adc-uat.adc1.level3.com:20300/AmdocsOSS/Portal/login.html", "//amd07adc-uat.adc1.level3.com:20700/AmdocsOSS/Portal/login.html"]
+    let f = ["http://amd01adc-uat.adc1.level3.com:20100/AmdocsOSS/Portal/login.html", "http://amd03adc-uat.adc1.level3.com:20300/AmdocsOSS/Portal/login.html", "http://amd03adc-uat.adc1.level3.com:20300/AmdocsOSS/Portal/login.html", "http://amd07adc-uat.adc1.level3.com:20700/AmdocsOSS/Portal/login.html"]
     for (let i = 0; i <= 3; i++) {
 
         http.get(f[i], function (res) {
             if (i === 0) {
                 let data20 = res.statusCode === 200 ? primarystatus20() : secondarystatus20()
+                console.log(res)
             }
 
             if (i === 1) {
                 let data21 = res.statusCode === 200 ? primarystatus21() : secondarystatus21()
+                console.log(res)
             }
             if (i === 2) {
                 let data22 = res.statusCode === 200 ? primarystatus22() : secondarystatus22()
+                console.log(res)
             }
             if (i === 3) {
                 let data23 = res.statusCode === 200 ? primarystatus23() : secondarystatus23()
+                console.log(res)
             }
 
      
@@ -458,22 +462,26 @@ function secondarystatus27() {
 
    // Metastorm 
 
-   let g = ["//mbpm-env1.level3.com/metastormsso/Default.aspx", "//mbpm-env2.level3.com/metastormsso/Default.aspx", "//mbpm-env3.level3.com/metastormsso/Default.aspx", "//mbpm-env4.level3.com/metastormsso/Default.aspx"]
+   let g = ["http://mbpm-env1.level3.com/metastormsso/Default.aspx", "http://mbpm-env2.level3.com/metastormsso/Default.aspx", "http://mbpm-env3.level3.com/metastormsso/Default.aspx", "http://mbpm-env4.level3.com/metastormsso/Default.aspx"]
    for (let i = 0; i <= 3; i++) {
 
        http.get(g[i], function (res) {
            if (i === 0) {
                let data24 = res.statusCode === 200 ? primarystatus24() : secondarystatus24()
+               console.log(res)
            }
 
            if (i === 1) {
                let data25 = res.statusCode === 200 ? primarystatus25() : secondarystatus25()
+               console.log(res)
            }
            if (i === 2) {
                let data26 = res.statusCode === 200 ? primarystatus26() : secondarystatus26()
+               console.log(res)
            }
            if (i === 3) {
                let data27 = res.statusCode === 200 ? primarystatus27() : secondarystatus27()
+               console.log(res)
            }
 
   
@@ -517,10 +525,10 @@ function secondarystatus27() {
                            <div id="alleft">
                            {/* <p> GCA   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
                            <Tippy placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="Global Credit Authority for approving the orders."><t>GCA </t></Tippy>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="//revenueservicetest/WebUI/ENV1/RevenueCreditAuthWeb/Order/List" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST1 "><button id="custbtn" text='submit' className={data8}   >TEST1</button></Tippy></a>&nbsp;&nbsp;
-                            <a href="//revenueservicetest/WebUI/ENV2/RevenueCreditAuthWeb/Order/List" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST2 "><button id="custbtn" text='submit' className={data9}   >TEST2</button></Tippy></a>&nbsp;&nbsp;
-                            <a href="//revenueservicetest/WebUI/ENV3/RevenueCreditAuthWeb/Order/List" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST3 "><button id="custbtn" text='submit' className={data10}   >TEST3</button></Tippy></a>&nbsp;
-                            <a href="//revenueservicetest/WebUI/ENV4/RevenueCreditAuthWeb/Order/List" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST4 "><button id="custbtn" text='submit' className={data11}   >TEST4</button></Tippy><br></br></a>
+                            <a href="http://revenueservicetest/WebUI/ENV1/RevenueCreditAuthWeb/Order/List" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST1 "><button id="custbtn" text='submit' className={data8}   >TEST1</button></Tippy></a>&nbsp;&nbsp;
+                            <a href="http://revenueservicetest/WebUI/ENV2/RevenueCreditAuthWeb/Order/List" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST2 "><button id="custbtn" text='submit' className={data9}   >TEST2</button></Tippy></a>&nbsp;&nbsp;
+                            <a href="http://revenueservicetest/WebUI/ENV3/RevenueCreditAuthWeb/Order/List" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST3 "><button id="custbtn" text='submit' className={data10}   >TEST3</button></Tippy></a>&nbsp;
+                            <a href="http://revenueservicetest/WebUI/ENV4/RevenueCreditAuthWeb/Order/List" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST4 "><button id="custbtn" text='submit' className={data11}   >TEST4</button></Tippy><br></br></a>
                
                             </div>
 
@@ -548,19 +556,19 @@ function secondarystatus27() {
                         <div id="alleft">
                             {/* <p>ASRI &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
                             <Tippy placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="The Adaptive Service Resource Inventory which Receives Product OrdersOrchestrate the Order based on the catalog-based Product to CFS relationships. Collect the Customer Facing Service (CFS) attributes  if required Design the CFS by Assigning Resource Facing Services (RFSs) linked to specific Resources in the network Inventory the CFSs, RFSs & the Resources they consume. Provide the Activation details to SAO fulfillment suite."><t>ASRI</t></Tippy>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="//amd01adc-uat.adc1.level3.com:20100/AmdocsOSS/Portal/login.html" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST1 "><button id="custbtn" text='submit' className={data20}>TEST1</button></Tippy></a>&nbsp;&nbsp;
-                            <a href="//amd03adc-uat.adc1.level3.com:20100/AmdocsOSS/Portal/login.html" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST2 "><button id="custbtn" text='submit' className={data21}>TEST2</button></Tippy></a>&nbsp;&nbsp;
-                            <a href="//amd05adc-uat.adc1.level3.com:20100/AmdocsOSS/Portal/login.html" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST3 "><button id="custbtn" text='submit' className={data22}>TEST3</button></Tippy></a>&nbsp;
-                            <a href="//amd07adc-uat.adc1.level3.com:20100/AmdocsOSS/Portal/login.html" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST4 "><button id="custbtn" text='submit' className={data23}>TEST4</button></Tippy><br></br></a>
+                            <a href="http://amd01adc-uat.adc1.level3.com:20100/AmdocsOSS/Portal/login.html" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST1 "><button id="custbtn" text='submit' className={data20}>TEST1</button></Tippy></a>&nbsp;&nbsp;
+                            <a href="http://amd03adc-uat.adc1.level3.com:20100/AmdocsOSS/Portal/login.html" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST2 "><button id="custbtn" text='submit' className={data21}>TEST2</button></Tippy></a>&nbsp;&nbsp;
+                            <a href="http://amd05adc-uat.adc1.level3.com:20100/AmdocsOSS/Portal/login.html" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST3 "><button id="custbtn" text='submit' className={data22}>TEST3</button></Tippy></a>&nbsp;
+                            <a href="http://amd07adc-uat.adc1.level3.com:20100/AmdocsOSS/Portal/login.html" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST4 "><button id="custbtn" text='submit' className={data23}>TEST4</button></Tippy><br></br></a>
                             </div>
 
                         <div id="alleft">
                             {/* <p></p>Metastorm  &nbsp; */}
                             <Tippy placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="Workflow and business process engine which supports SwIFT and related processes."><t>Metastorm</t></Tippy>&nbsp;&nbsp;
-                            <a href="//mbpm-env1.level3.com/metastormsso/Default.aspx" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST1 "><button id="custbtn" text='submit' className={data24}>TEST1</button></Tippy></a>&nbsp;&nbsp;
-                            <a href="//mbpm-env3.level3.com/metastormsso/Default.aspx" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST2 "><button id="custbtn" text='submit' className={data25}>TEST2</button></Tippy></a>&nbsp;&nbsp;
-                            <a href="//mbpm-env3.level3.com/metastormsso/Default.aspx" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST3 "><button id="custbtn" text='submit' className={data26}>TEST3</button></Tippy></a>&nbsp;
-                            <a href="//mbpm-env4.level3.com/metastormsso/Default.aspx" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST4 "><button id="custbtn" text='submit' className={data27}>TEST4</button></Tippy><br></br></a>
+                            <a href="http://mbpm-env1.level3.com/metastormsso/Default.aspx" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST1 "><button id="custbtn" text='submit' className={data24}>TEST1</button></Tippy></a>&nbsp;&nbsp;
+                            <a href="http://mbpm-env3.level3.com/metastormsso/Default.aspx" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST2 "><button id="custbtn" text='submit' className={data25}>TEST2</button></Tippy></a>&nbsp;&nbsp;
+                            <a href="http://mbpm-env3.level3.com/metastormsso/Default.aspx" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST3 "><button id="custbtn" text='submit' className={data26}>TEST3</button></Tippy></a>&nbsp;
+                            <a href="http://mbpm-env4.level3.com/metastormsso/Default.aspx" target="_blank"><Tippy delay= {200} placement = {'right'} animation='perspective' theme={'Dark'} interactive = 'true' content="TEST4 "><button id="custbtn" text='submit' className={data27}>TEST4</button></Tippy><br></br></a>
                         </div>
 
                     </div>

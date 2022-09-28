@@ -14,6 +14,7 @@ export default class Push3 extends React.Component {
       
     }
 
+    
     submit(){
         console.log(this.state)
         let url ="http://localhost:5001/api/posts/";

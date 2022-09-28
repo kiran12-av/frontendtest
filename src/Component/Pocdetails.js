@@ -1,7 +1,14 @@
+// for refreshing the page and displaying the 
 import React from 'react'
 import './buttontesthtml.css'
 
 export default function Pocdetails() {
+
+
+  setInterval(function(){
+    window.location.reload(1);
+ }, 300000);
+
 
   return (
     <div> <div>
@@ -13,20 +20,20 @@ export default function Pocdetails() {
 <table class="viewtable" >
  <tr className="colheading">
     <th >App.Name</th>
-    <th>QA</th> 
-    <th>Lead</th> 
+    <th>QA/Lead</th> 
+    <th>Distro</th> 
 
 
   </tr>
   <tr class="coldata">
  <td>Salesforce</td>
-    <td>Sahu, Prachi</td>
-    <td>Need info</td>
+    <td>Sahu, Prachi/</td>
+    <td></td>
   </tr>
   <tr className="coldata">
     <td>Swift</td>
     <td>No offshore</td>
-    <td>NA</td>
+    <td>LNS-fT-SwIFT DEV Environment</td>
   </tr>
 
   <tr className="coldata">
@@ -45,23 +52,23 @@ export default function Pocdetails() {
 
   <tr className="coldata">
     <td>FlightDeck</td>
-    <td>Selvaganapathy</td>
-    <td>Dhananjaya,Bennur</td>
+    <td>Selvaganapathy/Dhananjaya,Bennur</td>
+    <td></td>
   </tr>
 
 
   <tr className="coldata">
     <td>Autopilot</td>
-    <td>Uday,Kiran</td>
-    <td>Madahalli chowdegowda Raju</td>
+    <td>Uday,Kiran/Madahalli chowdegowda Raju</td>
+    <td>Autopilot_SUPPORT</td>
   </tr>
 
 
   
   <tr className="coldata">
     <td>ASRI</td>
-    <td>Shobha R</td>
-    <td>Sapna, Hallikeri</td>
+    <td>Shobha R/Sapna, Hallikeri</td>
+    <td>ASRI-IT-CTL-Infra-Dev-Support</td>
   </tr>
 
 
